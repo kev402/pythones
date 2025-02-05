@@ -7,7 +7,7 @@ Comando de git para clonar este repositorio:
 Con este comando solo habrás descargado los archivos y el módulo no será accesible para todos los nuevos archivos de python que crees para hacer accesible este módulo debes ir a la carpeta clonada con:
 # `cd pythones`
 Una vez ubicado en esta carpeta vas a usar python para instalar este módulo en la carpeta de python que esta dedicada a almacenar estos módulos usando:
-# `python pythones.py install`
+# `python setup.py install`
 Si estas en sistemas basados en unix:
-# `python3 pythones.py install`
+# `python3 setup.py install`
 Después de este comando pythones ya estará listo para ser usado en tus proyectos.
