@@ -1,7 +1,7 @@
-from setuptools import setup, find_packages
+from setuptools import setup
 
 setup(
-    name='pythones',
-    version='1.0',
-    packages=find_packages(),
+    name="pythones",
+    version="1.0",
+    py_modules=["pythones"],
 )
