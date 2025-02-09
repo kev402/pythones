@@ -1,7 +1,7 @@
 """pythones - Un módulo que permite escribir código de python en español y con una sintaxis basada en funciones.
 Creado por kev402 - repositorio: https://github.com/kev402 y https://github.com/kev402/pythones
 Las librerías usadas para este proyecto son estandares de python.
-Una vez obtenga este archivo lo puede instalar usando el comando python pythones.py install en windows y en sistemas unix python3 pythones.py install.
+Una vez obtenga este archivo lo puede instalar usando el comando python setup.py install en windows y en sistemas unix python3 setup.py install.
 Para importarlo en su código use from pythones import *
 Para más información visite el repositorio de github."""
 
@@ -130,3 +130,8 @@ def cad(valor):
 def redondear(numero, decimales):
     """Redondea un número usando round de python."""
     return round(numero, decimales)
+
+def descargar(url):
+    """Descarga un archivo usando curl, si no tiene curl en su sistema, debe instalarlo, si quiere verificar que curl este instalado puede usar curl --version en un terminal."""
+    comando = subprocess.run(f"curl -L {url}", shell= True, check=True)
+    return comando
